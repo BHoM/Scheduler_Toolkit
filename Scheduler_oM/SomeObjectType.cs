@@ -27,7 +27,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BH.oM.Base;
 
-namespace BH.oM.External.Scheduler
+namespace BH.oM.Scheduler
 {
     // You can define your own Toolkit-specific types in this namespace.
 
