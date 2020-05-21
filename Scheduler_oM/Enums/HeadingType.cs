@@ -20,22 +20,23 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BH.oM.Base;
+using System.ComponentModel;
 
-namespace BH.oM.Scheduler
+namespace BH.oM.Scheduler.Enums
 {
-    // You can define your own Toolkit-specific types in this namespace.
-
-    // public class SomeObject : BHoMObject
-    // {
-    // // See examples in the BHoM repo and the wiki to see how we define types.
-    // // Generally, all properties should be public and have public getter and setter.
-    // // No constructor should be specified as we auto generate it from the class properties.
-    // // If a specific instantiaton method is needed, we categorise it as an "Engine/Create" method.
-    // }
+    [Description("Provides the default hierarchical WBS to allow a user to determine what level they are looking at")]
+    public enum WBSType
+    {
+        Phase = 1,
+        Category = 2,
+        Level = 3,
+        BuiltInCategory = 4,
+        FamilySymbol = 5,
+        MultiLayerElement = 6,
+        Curing = 7,
+        Id = 8,
+        CostHeader = 9,
+        LineItem = 10,
+        Root = 11
+    }
 }

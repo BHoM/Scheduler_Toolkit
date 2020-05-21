@@ -33,6 +33,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Architecture_oM">
+      <HintPath>..\..\BHoM\Build\Architecture_oM.dll</HintPath>
+    </Reference>
     <Reference Include="BHoM">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\BHoM\Build\BHoM.dll</HintPath>
@@ -48,6 +51,9 @@
       <HintPath>..\..\BHoM\Build\Geometry_oM.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Reflection_oM">
       <HintPath>..\..\BHoM\Build\Reflection_oM.dll</HintPath>
       <Private>False</Private>
@@ -62,10 +68,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\CategorySpecificData.cs" />
+    <Compile Include="Components\Connection.cs" />
+    <Compile Include="Components\Duration.cs" />
+    <Compile Include="Components\Phase.cs" />
+    <Compile Include="Components\Quantity.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="ElementTask.cs" />
+    <Compile Include="Enums\ConnectionType.cs" />
+    <Compile Include="Enums\ConstraintType.cs" />
+    <Compile Include="Enums\HeadingType.cs" />
+    <Compile Include="Enums\MeasurementType.cs" />
+    <Compile Include="Enums\PhaseType.cs" />
+    <Compile Include="Enums\SchedulerApplication.cs" />
+    <Compile Include="Enums\TaskType.cs" />
+    <Compile Include="Enums\VendorApplication.cs" />
+    <Compile Include="LocalTask.cs" />
+    <Compile Include="Microsoft\Project\Desktop\Baseline.cs" />
+    <Compile Include="Microsoft\Project\Desktop\Task.cs" />
+    <Compile Include="Microsoft\Project\Online\Task.cs" />
+    <Compile Include="Microsoft\Project\Online\TaskCreationInfo.cs" />
+    <Compile Include="Microsoft\Project\Online\User.cs" />
+    <Compile Include="Microsoft\Project\Online\UserIdInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SomeObjectType.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Oracle\" />
+    <Folder Include="PowerProject\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
