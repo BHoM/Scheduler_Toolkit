@@ -42,7 +42,7 @@ namespace BH.oM.Schedule
         public virtual Phase PhaseCreated { get; set; }
         public virtual Phase PhaseDemolised { get; set; }
         public virtual PhaseType PhaseType { get; set; }
-        public virtual WBSType HeadingType { get; set; }
+        public virtual WBSLevel HeadingType { get; set; }
         public virtual Level Level { get; set; }
         public virtual List<string> Names { get; set; } = new List<string>();
         public virtual string ElementId { get; set; }
