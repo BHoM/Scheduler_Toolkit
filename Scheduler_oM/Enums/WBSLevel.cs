@@ -25,7 +25,7 @@ using System.ComponentModel;
 namespace BH.oM.Scheduler.Enums
 {
     [Description("Provides the default hierarchical WBS to allow a user to determine what level they are looking at")]
-    public enum WBSType
+    public enum WBSLevel
     {
         Phase = 1,
         Category = 2,

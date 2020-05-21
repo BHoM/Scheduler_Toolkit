@@ -39,11 +39,11 @@ namespace BH.oM.Schedule
         public virtual Guid Id { get; set; }
         public virtual Guid ParentId { get; set; }
         public virtual LocalTask Parent { get; set; }
-        public virtual BH.oM.Scheduler.Microsoft.Project.Desktop.Components.Task DesktopTask { get; set; }
+        public virtual Scheduler.Microsoft.Project.Desktop.Components.Task DesktopTask { get; set; }
         public virtual Task OnlineTask { get; set; }
         public virtual TaskCreationInfo Info { get; set; }
         public virtual List<LocalTask> Children { get; set; }
-        public virtual WBSType LevelType { get; set; }
+        public virtual WBSLevel LevelType { get; set; }
         public virtual Dictionary<Guid, ConnectionType> Connections { get; set; }
 
         /***************************************************/
@@ -58,7 +58,7 @@ namespace BH.oM.Schedule
         public void Add()
         { ; }
 
-        public void Add(string name, bool isManual, WBSType levelType)
+        public void Add(string name, bool isManual, WBSLevel levelType)
         {
             Info.Name = name;
             Info.IsManual = isManual;
@@ -68,7 +68,7 @@ namespace BH.oM.Schedule
             //Task = Document.CurrentDraft.Tasks.Add(Info);
             LevelType = levelType;
         }
-        public void Add(string name, bool isManual, string duration, WBSType levelType)
+        public void Add(string name, bool isManual, string duration, WBSLevel levelType)
         {
             Info.Name = name;
             Info.IsManual = isManual;
@@ -79,7 +79,7 @@ namespace BH.oM.Schedule
             //Task = Document.CurrentDraft.Tasks.Add(Info);
             LevelType = levelType;
         }
-        public void Add(string name, bool isManual, LocalTask parent, WBSType levelType)
+        public void Add(string name, bool isManual, LocalTask parent, WBSLevel levelType)
         {
             Info.Name = name;
             Info.IsManual = isManual;
@@ -93,7 +93,7 @@ namespace BH.oM.Schedule
             if (Parent.Children.Count(e => e.Info.Name == name) == 0) Parent.Children.Add(this);
             LevelType = levelType;
         }
-        public void Add(string name, bool isManual, string duration, LocalTask parent, WBSType levelType)
+        public void Add(string name, bool isManual, string duration, LocalTask parent, WBSLevel levelType)
         {
             Info.Name = name;
             Info.IsManual = isManual;
