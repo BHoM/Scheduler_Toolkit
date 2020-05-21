@@ -38,11 +38,11 @@ namespace BH.oM.Schedule
 
         public virtual Guid Id { get; set; }
         public virtual Guid ParentId { get; set; }
-        public virtual LocalTask Parent { get; set; }
+        public virtual IList<LocalTask> Parent { get; set; } = new List<LocalTask>();
         public virtual Scheduler.Microsoft.Project.Desktop.Components.Task DesktopTask { get; set; }
         public virtual Task OnlineTask { get; set; }
         public virtual TaskCreationInfo Info { get; set; }
-        public virtual List<LocalTask> Children { get; set; }
+        public virtual IList<LocalTask> Children { get; set; } = new List<LocalTask>();
         public virtual WBSLevel LevelType { get; set; }
         public virtual Dictionary<Guid, ConnectionType> Connections { get; set; }
 
@@ -79,34 +79,40 @@ namespace BH.oM.Schedule
             //Task = Document.CurrentDraft.Tasks.Add(Info);
             LevelType = levelType;
         }
-        public void Add(string name, bool isManual, LocalTask parent, WBSLevel levelType)
+        public void Add(string name, bool isManual, IList<LocalTask> parent, WBSLevel levelType)
         {
-            Info.Name = name;
-            Info.IsManual = isManual;
-            Info.ParentId = parent.Id;
-            Info.Id = Guid.NewGuid();
-            ParentId = parent.Id;
-            Parent = parent;
-            Id = Info.Id;
-            //Task = pjDoc.CurrentDraft.Tasks.Add(Info);
-            //Task = Document.CurrentDraft.Tasks.Add(Info);
-            if (Parent.Children.Count(e => e.Info.Name == name) == 0) Parent.Children.Add(this);
-            LevelType = levelType;
+            foreach (LocalTask lt in parent)
+            {
+                Info.Name = name;
+                Info.IsManual = isManual;
+                Info.ParentId = lt.Id;
+                Info.Id = Guid.NewGuid();
+                ParentId = lt.Id;
+                Parent = parent;
+                Id = Info.Id;
+                //Task = pjDoc.CurrentDraft.Tasks.Add(Info);
+                //Task = Document.CurrentDraft.Tasks.Add(Info);
+                if (lt.Children.Count(e => e.Info.Name == name) == 0) lt.Children.Add(this);
+                LevelType = levelType;
+            }
         }
-        public void Add(string name, bool isManual, string duration, LocalTask parent, WBSLevel levelType)
+        public void Add(string name, bool isManual, string duration, IList<LocalTask> parent, WBSLevel levelType)
         {
-            Info.Name = name;
-            Info.IsManual = isManual;
-            Info.Duration = duration;
-            Info.ParentId = parent.Id;
-            Info.Id = Guid.NewGuid();
-            ParentId = parent.Id;
-            Parent = parent;
-            Id = Info.Id;
-            //Task = pjDoc.CurrentDraft.Tasks.Add(Info);
-            //Task = Document.CurrentDraft.Tasks.Add(Info);
-            if (Parent.Children.Count(e => e.Info.Name == name) == 0) Parent.Children.Add(this);
-            LevelType = levelType;
+            foreach (LocalTask lt in parent)
+            {
+                Info.Name = name;
+                Info.IsManual = isManual;
+                Info.Duration = duration;
+                Info.ParentId = lt.Id;
+                Info.Id = Guid.NewGuid();
+                ParentId = lt.Id;
+                Parent = parent;
+                Id = Info.Id;
+                //Task = pjDoc.CurrentDraft.Tasks.Add(Info);
+                //Task = Document.CurrentDraft.Tasks.Add(Info);
+                if (lt.Children.Count(e => e.Info.Name == name) == 0) lt.Children.Add(this);
+                LevelType = levelType;
+            }
         }
     }
 }
