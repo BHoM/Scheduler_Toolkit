@@ -77,7 +77,7 @@
     <Compile Include="ElementTask.cs" />
     <Compile Include="Enums\ConnectionType.cs" />
     <Compile Include="Enums\ConstraintType.cs" />
-    <Compile Include="Enums\HeadingType.cs" />
+    <Compile Include="Enums\WBSLevel.cs" />
     <Compile Include="Enums\MeasurementType.cs" />
     <Compile Include="Enums\PhaseType.cs" />
     <Compile Include="Enums\SchedulerApplication.cs" />

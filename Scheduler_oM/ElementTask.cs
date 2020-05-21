@@ -44,17 +44,17 @@ namespace BH.oM.Schedule
         public virtual PhaseType PhaseType { get; set; }
         public virtual WBSLevel HeadingType { get; set; }
         public virtual Level Level { get; set; }
-        public virtual List<string> Names { get; set; } = new List<string>();
+        public virtual IList<string> Names { get; set; } = new List<string>();
         public virtual string ElementId { get; set; }
         public virtual string TaskId { get; set; }
         public virtual string CostCodeId { get; set; }
         public virtual List<Material> Materials { get; set; }
         public virtual BoundingBox BoundingBox { get; set; }
         public virtual string ParentTask { get; set; }
-        public virtual List<string> ChildrenTasks { get; set; } = new List<string>();
-        public virtual List<CategorySpecificData> CategorySpecificData { get; set; } = new List<CategorySpecificData>();
-        public virtual List<Connection> Connections { get; set; } = new List<Connection>();
-        public virtual LocalTask LocalTask { get; set; }
+        public virtual IList<string> ChildrenTasks { get; set; } = new List<string>();
+        public virtual IList<CategorySpecificData> CategorySpecificData { get; set; } = new List<CategorySpecificData>();
+        public virtual IList<Connection> Connections { get; set; } = new List<Connection>();
+        public virtual IList<LocalTask> LocalTask { get; set; }
 
         /***************************************************/
 
