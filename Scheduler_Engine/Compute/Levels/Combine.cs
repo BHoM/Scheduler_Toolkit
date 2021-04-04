@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 //using System.Windows.Forms;
 
-namespace BH.Engine.External.Scheduler.Compute.Levels
+namespace BH.Engine.Scheduler.Compute.Levels
 {
     public static class Combine
     {

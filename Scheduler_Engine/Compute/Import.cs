@@ -11,9 +11,9 @@ using BH.Adapter.FileAdapter;
 //using BH.oM.Scheduler.Enums;
 using System.Diagnostics;
 
-namespace BH.Engine.Scheduler
+namespace BH.Engine.Scheduler.Compute
 {
-    public static partial class Compute
+    public static partial class Import
     {
         public static IList<object> Imported = new List<object>();
         //public static Document Document = new Document();
@@ -23,7 +23,7 @@ namespace BH.Engine.Scheduler
 
         private static string jsonFilePath = folder + file;
 
-        public static void ImportWithSerialiser()
+        public static void WithSerialiser()
         {
             try
             {
@@ -80,7 +80,7 @@ namespace BH.Engine.Scheduler
             return files;
         }
 
-        public static void ImportWithAdapter()
+        public static void WithAdapter()
         {
             try
             {

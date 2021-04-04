@@ -11,11 +11,11 @@ using BH.oM.Scheduler;
 using BH.oM.Geometry.SettingOut;
 using BH.oM.Scheduler.Enums;
 
-namespace BH.Engine.Scheduler
+namespace BH.Engine.Scheduler.Compute
 {
-    public static partial class Compute
+    public static partial class Import
     {
-        public static void ImportWithSerialiser2()
+        public static void WithSerialiser2()
         {
             try
             {

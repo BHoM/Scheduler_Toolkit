@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BH.Engine.External.Scheduler.Compute.Categories
+namespace BH.Engine.Scheduler.Compute.Categories
 {
     public static class Revit
     {

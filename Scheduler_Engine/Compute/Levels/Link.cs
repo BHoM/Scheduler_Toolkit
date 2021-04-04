@@ -1,6 +1,6 @@
 ﻿using BH.oM.Geometry.SettingOut;
 
-namespace BH.Engine.External.Scheduler.Compute.Levels
+namespace BH.Engine.Scheduler.Compute.Levels
 {
     public class Link
     {

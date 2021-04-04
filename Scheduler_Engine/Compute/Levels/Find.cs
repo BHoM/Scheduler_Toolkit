@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BH.Engine.External.Scheduler.Compute.Levels
+namespace BH.Engine.Scheduler.Compute.Levels
 {
     public static class Find
     {
