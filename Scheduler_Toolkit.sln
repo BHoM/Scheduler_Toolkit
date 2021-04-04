@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler_Engine", "Scheduler_Engine\Scheduler_Engine.csproj", "{10B83FFF-7606-425D-83BD-86FDFD4DB542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entry", "Entry\Entry.csproj", "{86D547F7-0CA1-4BEB-A565-8E8158A42DC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler_oM", "Scheduler_oM\Scheduler_oM.csproj", "{0CFB92AF-7449-475D-B70B-874208971215}"
 EndProject
@@ -17,6 +19,10 @@ Global
 		{10B83FFF-7606-425D-83BD-86FDFD4DB542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10B83FFF-7606-425D-83BD-86FDFD4DB542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10B83FFF-7606-425D-83BD-86FDFD4DB542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D547F7-0CA1-4BEB-A565-8E8158A42DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D547F7-0CA1-4BEB-A565-8E8158A42DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D547F7-0CA1-4BEB-A565-8E8158A42DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D547F7-0CA1-4BEB-A565-8E8158A42DC5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0CFB92AF-7449-475D-B70B-874208971215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0CFB92AF-7449-475D-B70B-874208971215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CFB92AF-7449-475D-B70B-874208971215}.Release|Any CPU.ActiveCfg = Release|Any CPU

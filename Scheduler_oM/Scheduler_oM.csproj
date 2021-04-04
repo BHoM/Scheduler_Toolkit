@@ -33,19 +33,32 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Architecture_oM">
+      <HintPath>..\..\BHoM\Build\Architecture_oM.dll</HintPath>
+    </Reference>
     <Reference Include="BHoM">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\BHoM\Build\BHoM.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Common_oM">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\BHoM\Build\Common_oM.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Geometry_oM">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\BHoM\Build\Geometry_oM.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Physical_Engine">
+      <HintPath>..\..\..\ProgramData\BHoM\Assemblies\Physical_Engine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Physical_oM">
+      <HintPath>..\..\..\ProgramData\BHoM\Assemblies\Physical_oM.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Reflection_Engine">
+      <HintPath>..\..\..\ProgramData\BHoM\Assemblies\Reflection_Engine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Reflection_oM">
@@ -62,8 +75,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\CategorySpecificData.cs" />
+    <Compile Include="Components\Connection.cs" />
+    <Compile Include="Components\Duration.cs" />
+    <Compile Include="Components\Phase.cs" />
+    <Compile Include="Components\Quantity.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="ElementTask.cs" />
+    <Compile Include="Enums\ConnectionType.cs" />
+    <Compile Include="Enums\ConstraintType.cs" />
+    <Compile Include="Enums\WBSLevel.cs" />
+    <Compile Include="Components\Connection.cs" />
+    <Compile Include="Components\DataItem.cs" />
+    <Compile Include="Duration.cs" />
+    <Compile Include="Enums\ConstraintType.cs" />
+    <Compile Include="Enums\GeometryOverlapType.cs" />
+    <Compile Include="Enums\HeadingType.cs" />
+    <Compile Include="Enums\MeasurementType.cs" />
+    <Compile Include="Enums\PhaseType.cs" />
+    <Compile Include="Enums\SchedulerApplication.cs" />
+    <Compile Include="Enums\TaskType.cs" />
+    <Compile Include="Enums\VendorApplication.cs" />
+    <Compile Include="LocalTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SomeObjectType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Vendors\Oracle\P6\" />
+    <Folder Include="Vendors\PowerProject\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vendors\Microsoft\Project\Desktop\Baseline.cs" />
+    <Compile Include="Vendors\Microsoft\Project\Desktop\Task.cs" />
+    <Compile Include="Vendors\Microsoft\Project\Online\Task.cs" />
+    <Compile Include="Vendors\Microsoft\Project\Online\TaskCreationInfo.cs" />
+    <Compile Include="Vendors\Microsoft\Project\Online\User.cs" />
+    <Compile Include="Vendors\Microsoft\Project\Online\UserIdInfo.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

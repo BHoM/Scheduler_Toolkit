@@ -20,22 +20,15 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BH.oM.Base;
-
-namespace BH.oM.Scheduler
+namespace BH.oM.Scheduler.Microsoft.Project.Online.Components
 {
-    // You can define your own Toolkit-specific types in this namespace.
+    public class UserIdInfo
+    {
+        public virtual string NameId { get; set; }
+        public virtual string NameIdIssuer { get; set; }
+        public virtual string TypeId { get; set; }
 
-    // public class SomeObject : BHoMObject
-    // {
-    // // See examples in the BHoM repo and the wiki to see how we define types.
-    // // Generally, all properties should be public and have public getter and setter.
-    // // No constructor should be specified as we auto generate it from the class properties.
-    // // If a specific instantiaton method is needed, we categorise it as an "Engine/Create" method.
-    // }
+        public UserIdInfo()
+        { }
+    }
 }
