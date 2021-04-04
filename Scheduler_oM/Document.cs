@@ -20,7 +20,6 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-<<<<<<< Updated upstream
 using BH.oM.Scheduler.Components;
 using BH.oM.Scheduler.Enums;
 using Newtonsoft.Json;
@@ -28,8 +27,10 @@ using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using BH.oM.Geometry.SettingOut;
+using BH.oM.Schedule;
 
-namespace BH.oM.Schedule
+namespace BH.oM.Scheduler
 {
     [Description("Acts as the programme schedule document")]
     public class Document
@@ -37,30 +38,6 @@ namespace BH.oM.Schedule
         /***************************************************/
         /**** Properties                                ****/
         /***************************************************/
-
-        public virtual string Name { get; set; }
-        [JsonConverter(typeof(StringEnumConverter))]
-        public virtual SchedulerApplication ApplicationType { get; set; } = SchedulerApplication.Microsoft_Project_Online;
-        public virtual IList<ElementTask> Tasks { get; set; } = new List<ElementTask>();
-        public virtual IList<Phase> Phases { get; set; } = new List<Phase>();
-
-        /***************************************************/
-
-        public Document()
-        { ; }
-=======
-using BH.oM.External.Scheduler.Components;
-using BH.oM.External.Scheduler.Enums;
-using BH.oM.Geometry.SettingOut;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace BH.oM.External.Scheduler
-{
-    public class Document
-    {
         public virtual string Name { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
@@ -72,15 +49,11 @@ namespace BH.oM.External.Scheduler
 
         public Document()
         { }
->>>>>>> Stashed changes
 
         public Phase PhaseById(string Id)
         {
             return Phases.FirstOrDefault(p => p.Guid == Id);
         }
     }
-<<<<<<< Updated upstream
+
 }
-=======
-}
->>>>>>> Stashed changes

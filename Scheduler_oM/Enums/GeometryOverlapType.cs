@@ -21,7 +21,7 @@
  */
 
 
-namespace BH.oM.External.Scheduler.Enums
+namespace BH.oM.Scheduler.Enums
 {
     public enum GeometryOverlapType
     {

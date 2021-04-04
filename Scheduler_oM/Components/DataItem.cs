@@ -21,7 +21,7 @@
  */
 
 
-namespace BH.oM.External.Scheduler.Components
+namespace BH.oM.Scheduler.Components
 {
     public class DataItem
     {
