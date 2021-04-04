@@ -20,17 +20,11 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using System.ComponentModel;
 
 namespace BH.oM.Scheduler.Microsoft.Project.Online.Components
 {
-    [Description("Mock MS Project Online User object")]
     public class User
     {
-        /***************************************************/
-        /**** Properties                                ****/
-        /***************************************************/
-
         public virtual UserIdInfo AadObjectId { get; set; }
         public virtual string Email { get; set; }
         public virtual string Expiration { get; set; }
@@ -40,9 +34,7 @@ namespace BH.oM.Scheduler.Microsoft.Project.Online.Components
         public virtual UserIdInfo UserId { get; set; }
         public virtual string UserPrincipalName { get; set; }
 
-        /***************************************************/
-        
         public User()
-        { ; }
+        { }
     }
 }

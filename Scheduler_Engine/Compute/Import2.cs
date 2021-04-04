@@ -6,10 +6,10 @@ using BH.oM.Data.Requests;
 using System.Diagnostics;
 using BH.oM.Base;
 using BH.Adapter.FileAdapter;
-using BH.oM.External.Scheduler.Components;
-using BH.oM.External.Scheduler;
+using BH.oM.Scheduler.Components;
+using BH.oM.Scheduler;
 using BH.oM.Geometry.SettingOut;
-using BH.oM.External.Scheduler.Enums;
+using BH.oM.Scheduler.Enums;
 
 namespace BH.Engine.Scheduler
 {

@@ -1,6 +1,6 @@
 ﻿
-using BH.oM.External.Scheduler.Components;
-using BH.oM.External.Scheduler.Enums;
+using BH.oM.Scheduler.Components;
+using BH.oM.Scheduler.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
