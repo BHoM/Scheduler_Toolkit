@@ -20,6 +20,7 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
+<<<<<<< Updated upstream
 using System.ComponentModel;
 
 namespace BH.oM.Scheduler.Components
@@ -39,6 +40,19 @@ namespace BH.oM.Scheduler.Components
 
         public Phase()
         { ; }
+=======
+namespace BH.oM.External.Scheduler.Components
+{
+    public class Phase
+    {
+        public virtual string Name { get; set; }
+        public virtual string Guid { get; set; }
+        public virtual int Id { get; set; }
+        public virtual short Order { get; set; }
+
+        public Phase()
+        { }
+>>>>>>> Stashed changes
 
         public bool PhaseIdIsNumber()
         {
