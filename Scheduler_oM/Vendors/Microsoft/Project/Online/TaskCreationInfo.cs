@@ -20,37 +20,25 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.Scheduler.Components;
 using System;
-using System.ComponentModel;
 
-namespace BH.oM.Scheduler.Microsoft.Project.Desktop.Components
+namespace BH.oM.Scheduler.Microsoft.Project.Online.Components
 {
-    [Description("Mock MS Project Desktop baseline object, catching a moment in time within the project programme to determine which activities are ahead or behind schedule")]
-    public class Baseline
+    public class TaskCreationInfo
     {
-        /***************************************************/
-        /**** Properties                                ****/
-        /***************************************************/
-
-        public virtual decimal BudgetCost { get; set; }
-        public virtual decimal BudgetWork { get; set; }
-        public virtual decimal Cost { get; set; }
-        public virtual DateTime DeliverableFinish { get; set; }
-        public virtual DateTime DeliverableStart { get; set; }
-        public virtual Duration Duration { get; set; }
-        public virtual Duration DurationEstimated { get; set; }
-        public virtual string DurationText { get; set; }
+        public virtual bool IsManual { get; set; }
         public virtual DateTime Finish { get; set; }
-        public virtual string FinishText { get; set; }
-        public virtual decimal FixedCost { get; set; }
         public virtual DateTime Start { get; set; }
-        public virtual string StartText { get; set; }
-        public virtual decimal Work { get; set; }
+        public virtual Guid AddAfterId { get; set; }
+        public virtual Guid Id { get; set; }
+        public virtual Guid ParentId { get; set; }
+        public virtual string TypeId { get; }
+        public virtual string Duration { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string Notes { get; set; }
+        public virtual User StatusManager { get; set; }
 
-        /***************************************************/
-
-        public Baseline()
+        public TaskCreationInfo()
         { ; }
     }
 }

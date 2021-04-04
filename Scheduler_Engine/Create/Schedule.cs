@@ -1,4 +1,4 @@
-﻿using BH.oM.External.Scheduler;
+﻿using BH.oM.Scheduler;
 
 namespace BH.Engine.Scheduler
 {

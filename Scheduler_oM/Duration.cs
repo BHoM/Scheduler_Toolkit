@@ -22,7 +22,7 @@
 
 using System;
 
-namespace BH.oM.External.Scheduler
+namespace BH.oM.Scheduler
 {
     public class Duration
     {

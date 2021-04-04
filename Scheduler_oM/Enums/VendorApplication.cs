@@ -20,7 +20,6 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-<<<<<<< Updated upstream
 using System.ComponentModel;
 
 namespace BH.oM.Scheduler.Enums
@@ -28,24 +27,13 @@ namespace BH.oM.Scheduler.Enums
     [Description("Authoring 3D model software")]
     public enum Vendor3DApplication
     {
-=======
-
-namespace BH.oM.External.Scheduler
-{
-    public enum Vendor3DApplication
-    {
         Unknown = 0,
->>>>>>> Stashed changes
         Revit = 1,
         ArchiCAD = 2,
         VectorWorks = 3,
         MicroStation = 4,
-<<<<<<< Updated upstream
         SketchUp = 5,
         Rhino = 6,
         Robot = 7
-=======
-        SketchUp = 5
->>>>>>> Stashed changes
     }
 }

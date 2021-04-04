@@ -20,7 +20,6 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-<<<<<<< Updated upstream
 using BH.oM.Scheduler.Enums;
 using System.ComponentModel;
 
@@ -38,35 +37,24 @@ namespace BH.oM.Scheduler.Components
         [Description("Defines the priority for the various connection types")]
         public virtual ConnectionType ConnectionType { get; set; }
 
+        //public virtual GeometryOverlapType ConnectionType { get; set; }
         /***************************************************/
 
         public Connection()
-        { ; }
-=======
-using BH.oM.External.Scheduler.Enums;
-
-namespace BH.oM.External.Scheduler.Components
-{
-    public class Connection
-    {
-        public virtual string Id { get; set; }
-        public virtual GeometryOverlapType ConnectionType { get; set; }
-
-        public Connection()
         { }
->>>>>>> Stashed changes
 
         public Connection(string id)
         { Id = id; }
 
-<<<<<<< Updated upstream
         public Connection(string id, ConnectionType connectionType)
-=======
-        public Connection(string id, GeometryOverlapType connectionType)
->>>>>>> Stashed changes
         {
             Id = id;
             ConnectionType = connectionType;
         }
+        //public Connection(string id, GeometryOverlapType connectionType)
+        //{
+        //    Id = id;
+        //    ConnectionType = connectionType;
+        //}
     }
 }

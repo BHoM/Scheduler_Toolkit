@@ -100,13 +100,6 @@
     <Folder Include="Query\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Scheduler_oM\Scheduler_oM.csproj">
-      <Project>{f55cc8a5-44cb-4333-bc8a-a0eb6775b1a8}</Project>
-      <Name>Scheduler_oM</Name>
-      <Private>False</Private>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Compute\Categories\Revit.cs" />
     <Compile Include="Compute\Import.cs" />
     <Compile Include="Compute\Import2.cs" />
@@ -118,6 +111,12 @@
     <Compile Include="Compute\Phases.cs" />
     <Compile Include="Create\Error\Event.cs" />
     <Compile Include="Create\Schedule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Scheduler_oM\Scheduler_oM.csproj">
+      <Project>{0cfb92af-7449-475d-b70b-874208971215}</Project>
+      <Name>Scheduler_oM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

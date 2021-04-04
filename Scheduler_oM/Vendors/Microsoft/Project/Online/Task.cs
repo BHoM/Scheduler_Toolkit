@@ -20,12 +20,12 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.External.Scheduler.Enums;
+using BH.oM.Scheduler.Enums;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace BH.oM.External.Scheduler.Microsoft.Project.Online.Components
+namespace BH.oM.Scheduler.Microsoft.Project.Online.Components
 {
     public class Task
     {
