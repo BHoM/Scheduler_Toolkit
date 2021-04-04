@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BH.Engine.External.Scheduler.Create.Error
+namespace BH.Engine.Scheduler.Create.Error
 {
     class Event
     {

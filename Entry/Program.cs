@@ -16,11 +16,11 @@ namespace Entry
             try
             {
                 //Load BHoM libraries
-                //LoadBHoMAssemblies();
+                LoadBHoMAssemblies();
 
                 ///Scheduler
-                //BH.Engine.Scheduler.Compute.ImportWithAdapter();
-                BH.Engine.Scheduler.Compute.ImportWithSerialiser();
+                BH.Engine.Scheduler.Compute.Import.WithAdapter();
+                //BH.Engine.Scheduler.Compute.Import.WithSerialiser();
 
                 //if (Transfer.Levels.PhaseManualCorrection(BH.Engine.Scheduler.Compute.Imported.ToList()) == true)
                 //{

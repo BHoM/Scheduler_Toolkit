@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BH.Engine.External.Scheduler.Compute
+namespace BH.Engine.Scheduler.Compute
 {
     public static class Phases
     {
@@ -16,7 +16,7 @@ namespace BH.Engine.External.Scheduler.Compute
         {
             try
             {
-                lAll = Engine.Scheduler.Compute.Imported.Cast<Phase>()
+                lAll = Engine.Scheduler.Compute.Phases.lAll.Cast<Phase>()
                                 .Where(e => e.GetType() == typeof(Phase))
                                 .OrderBy(e => e.Order)
                                 .ToList();
