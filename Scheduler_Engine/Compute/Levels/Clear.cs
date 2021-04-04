@@ -1,7 +1,6 @@
-﻿using BH.Engine.External.Scheduler.Compute.Levels;
-using System;
+﻿using System;
 
-namespace BH.Engine.Scheduler.Levels
+namespace BH.Engine.Scheduler.Compute.Levels
 {
     public static class Clear
     {
