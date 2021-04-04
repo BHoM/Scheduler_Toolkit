@@ -20,11 +20,17 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
+<<<<<<< Updated upstream
 using System.ComponentModel;
 
 namespace BH.oM.Scheduler.Enums
 {
     [Description("Similar to LifeCycleAssessment > Enums > QuantityType but slightly expanded")]
+=======
+
+namespace BH.oM.External.Scheduler.Enums
+{
+>>>>>>> Stashed changes
     public enum MeasurementType
     {
         Spot = 1,

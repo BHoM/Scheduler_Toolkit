@@ -20,6 +20,7 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
+<<<<<<< Updated upstream
 using BH.oM.Scheduler.Components;
 using BH.oM.Scheduler.Enums;
 using Newtonsoft.Json;
@@ -47,10 +48,39 @@ namespace BH.oM.Schedule
 
         public Document()
         { ; }
+=======
+using BH.oM.External.Scheduler.Components;
+using BH.oM.External.Scheduler.Enums;
+using BH.oM.Geometry.SettingOut;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace BH.oM.External.Scheduler
+{
+    public class Document
+    {
+        public virtual string Name { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        public virtual SchedulerApplication ApplicationType { get; set; } = SchedulerApplication.Microsoft_Project_Online;
+        public virtual List<ElementTask> Tasks { get; set; } = new List<ElementTask>();
+        public virtual List<Phase> Phases { get; set; } = new List<Phase>();
+        public virtual List<Level> Levels { get; set; } = new List<Level>();
+        public virtual Level GroundLevel { get; set; }
+
+        public Document()
+        { }
+>>>>>>> Stashed changes
 
         public Phase PhaseById(string Id)
         {
             return Phases.FirstOrDefault(p => p.Guid == Id);
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

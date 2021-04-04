@@ -20,6 +20,7 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
+<<<<<<< Updated upstream
 using BH.oM.Architecture.Elements;
 using BH.oM.Common.Materials;
 using BH.oM.Geometry;
@@ -37,20 +38,41 @@ namespace BH.oM.Schedule
         /**** Properties                                ****/
         /***************************************************/
 
+=======
+using BH.oM.External.Scheduler.Components;
+using BH.oM.External.Scheduler.Enums;
+using BH.oM.Geometry;
+using BH.oM.Geometry.SettingOut;
+using BH.oM.Physical.Materials;
+using System.Collections.Generic;
+
+namespace BH.oM.External.Scheduler
+{
+    public class ElementTask
+    {
+>>>>>>> Stashed changes
         public virtual Vendor3DApplication Vendor { get; set; }
         public virtual string Guid { get; set; }
         public virtual Phase PhaseCreated { get; set; }
         public virtual Phase PhaseDemolised { get; set; }
         public virtual PhaseType PhaseType { get; set; }
+<<<<<<< Updated upstream
         public virtual WBSLevel HeadingType { get; set; }
         public virtual Level Level { get; set; }
         public virtual IList<string> Names { get; set; } = new List<string>();
+=======
+        public virtual HeadingType HeadingType { get; set; }
+        public virtual Level Level { get; set; }
+        public virtual string Name { get; set; }
+        public virtual List<string> Names { get; set; } = new List<string>();
+>>>>>>> Stashed changes
         public virtual string ElementId { get; set; }
         public virtual string TaskId { get; set; }
         public virtual string CostCodeId { get; set; }
         public virtual List<Material> Materials { get; set; }
         public virtual BoundingBox BoundingBox { get; set; }
         public virtual string ParentTask { get; set; }
+<<<<<<< Updated upstream
         public virtual IList<string> ChildrenTasks { get; set; } = new List<string>();
         public virtual IList<CategorySpecificData> CategorySpecificData { get; set; } = new List<CategorySpecificData>();
         public virtual IList<Connection> Connections { get; set; } = new List<Connection>();
@@ -60,6 +82,16 @@ namespace BH.oM.Schedule
 
         public ElementTask()
         { ; }
+=======
+        public virtual List<string> ChildrenTasks { get; set; } = new List<string>();
+        public virtual List<DataItem> TaskSpecificData { get; set; } = new List<DataItem>();
+        public virtual List<DataItem> CategorySpecificData { get; set; } = new List<DataItem>();
+        public virtual List<Connection> Connections { get; set; } = new List<Connection>();
+        //public virtual LocalTask LocalTask { get; set; }
+
+        public ElementTask()
+        { }
+>>>>>>> Stashed changes
 
         public bool TaskIdIsNumber()
         {

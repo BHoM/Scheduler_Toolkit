@@ -20,11 +20,17 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
+<<<<<<< Updated upstream
 using System.ComponentModel;
 
 namespace BH.oM.Scheduler.Enums
 {
     [Description("General phase types, needed for correct colouring upon visualisations")]
+=======
+
+namespace BH.oM.External.Scheduler.Enums
+{
+>>>>>>> Stashed changes
     public enum PhaseType
     {
         New = 1,

@@ -20,22 +20,16 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-<<<<<<< Updated upstream
-using System.ComponentModel;
 
-namespace BH.oM.Scheduler.Enums
+namespace BH.oM.External.Scheduler.Components
 {
-    [Description("Resourcing types for different construction activities")]
-=======
-
-namespace BH.oM.External.Scheduler.Enums
-{
->>>>>>> Stashed changes
-    public enum TaskType
+    public class DataItem
     {
-        FixedUnits = 0,
-        FixedDuration = 1,
-        FixedWork = 2,
-        Dummy = 1000
+        public virtual string Name { get; set; }
+        public virtual string Value { get; set; }
+        public virtual string Unit { get; set; }
+
+        public DataItem()
+        { }
     }
 }
