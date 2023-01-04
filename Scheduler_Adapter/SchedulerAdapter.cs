@@ -38,7 +38,7 @@ namespace BH.Adapter.Scheduler
         public SchedulerAdapter()
         {
             //Sets as a constant string, located in the Convert class
-            AdapterIdName = Convert.AdapterIdName;
+            //AdapterIdName = Convert.AdapterIdName;
 
             // If your toolkit needs to define this.AdapterComparers and or this.DependencyTypes,
             // this constructor has to populate those properties.
