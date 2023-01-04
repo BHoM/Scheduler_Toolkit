@@ -1,6 +1,6 @@
 ﻿using BH.Engine.Reflection;
 using BH.oM.Geometry;
-using BH.oM.Geometry.SettingOut;
+using BH.oM.Spatial.SettingOut;
 using System;
 using System.ComponentModel.Design;
 using System.Linq;
@@ -30,7 +30,7 @@ namespace BH.Engine.Scheduler.Compute.Levels
             }
             catch (Exception ae)
             {
-                Reflection.Compute.RecordError(ae.StackTrace); Reflection.Compute.RecordError(ae.Message);
+                Base.Compute.RecordError(ae.StackTrace); Base.Compute.RecordError(ae.Message);
             }
             return null;
         }
@@ -55,7 +55,7 @@ namespace BH.Engine.Scheduler.Compute.Levels
             }
             catch (Exception ae)
             {
-                Reflection.Compute.RecordError(ae.StackTrace); Reflection.Compute.RecordError(ae.Message);
+                Base.Compute.RecordError(ae.StackTrace); Base.Compute.RecordError(ae.Message);
             }
             return null;
         }
@@ -71,7 +71,7 @@ namespace BH.Engine.Scheduler.Compute.Levels
             }
             catch (Exception ae)
             {
-                Reflection.Compute.RecordError(ae.StackTrace); Reflection.Compute.RecordError(ae.Message);
+                Base.Compute.RecordError(ae.StackTrace); Base.Compute.RecordError(ae.Message);
             }
             return null;
         }
@@ -130,9 +130,9 @@ namespace BH.Engine.Scheduler.Compute.Levels
             }
             catch (Exception ae)
             {
-                Reflection.Compute.RecordError(ae.StackTrace); 
-                Reflection.Compute.RecordError(ae.Message);
-                if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.Message);
+                Base.Compute.RecordError(ae.StackTrace); 
+                Base.Compute.RecordError(ae.Message);
+                if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.Message);
             }
             return null;
         }

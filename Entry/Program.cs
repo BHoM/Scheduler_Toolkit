@@ -52,8 +52,8 @@ namespace Entry
             catch (Exception ae)
             {
                 var s = ae.Message;
-                //BH.Engine.Reflection.Compute.RecordError(ae.Message);
-                //if (ae.InnerException != null) BH.Engine.Reflection.Compute.RecordError(ae.InnerException.ToString());
+                //BH.Engine.Base.Compute.RecordError(ae.Message);
+                //if (ae.InnerException != null) BH.Engine.Base.Compute.RecordError(ae.InnerException.ToString());
             }
         }
 

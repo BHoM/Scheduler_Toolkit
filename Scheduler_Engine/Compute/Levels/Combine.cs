@@ -1,5 +1,5 @@
 ﻿
-//using BH.oM.Geometry.SettingOut;
+//using BH.oM.Spatial.SettingOut;
 using System;
 using System.Data;
 using System.Linq;
@@ -59,9 +59,9 @@ namespace BH.Engine.Scheduler.Compute.Levels
             //}
             //catch (Exception ae)
             //{
-            //    Reflection.Compute.RecordError(ae.StackTrace); 
-            //    Reflection.Compute.RecordError(ae.Message); 
-            //    if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.ToString());
+            //    Base.Compute.RecordError(ae.StackTrace); 
+            //    Base.Compute.RecordError(ae.Message); 
+            //    if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.ToString());
             //    return false;
             //}
             return true;

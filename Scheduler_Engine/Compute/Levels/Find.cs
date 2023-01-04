@@ -1,4 +1,4 @@
-﻿using BH.oM.Geometry.SettingOut;
+﻿using BH.oM.Spatial.SettingOut;
 using BH.oM.Geometry;
 using System;
 using System.Collections.Generic;
@@ -32,9 +32,9 @@ namespace BH.Engine.Scheduler.Compute.Levels
             }
             catch (Exception ae)
             {
-                Reflection.Compute.RecordError(ae.StackTrace); 
-                Reflection.Compute.RecordError(ae.Message); 
-                if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.ToString());
+                Base.Compute.RecordError(ae.StackTrace); 
+                Base.Compute.RecordError(ae.Message); 
+                if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.ToString());
             }
             return lOut;
         }

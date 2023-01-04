@@ -5,10 +5,10 @@ using System.Linq;
 using BH.oM.Data.Requests;
 using System.Diagnostics;
 using BH.oM.Base;
-using BH.Adapter.FileAdapter;
+using BH.Adapter.File;
 using BH.oM.Scheduler.Components;
 using BH.oM.Scheduler;
-using BH.oM.Geometry.SettingOut;
+using BH.oM.Spatial.SettingOut;
 using BH.oM.Scheduler.Enums;
 
 namespace BH.Engine.Scheduler.Compute
@@ -45,8 +45,8 @@ namespace BH.Engine.Scheduler.Compute
             catch (Exception ae)
             {
                 var s = ae.Message;
-                //Reflection.Compute.RecordError(ae.Message);
-                //if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.ToString());
+                //Base.Compute.RecordError(ae.Message);
+                //if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.ToString());
             }
         }
 
@@ -90,8 +90,8 @@ namespace BH.Engine.Scheduler.Compute
             catch (Exception ae)
             {
                 var s = ae.Message;
-                //Reflection.Compute.RecordError(ae.Message);
-                //if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.ToString());
+                //Base.Compute.RecordError(ae.Message);
+                //if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.ToString());
             }
         }
 
@@ -128,9 +128,9 @@ namespace BH.Engine.Scheduler.Compute
         //    }
         //    catch (Exception ae)
         //    {
-        //        //BH.Engine.Reflection.Compute.RecordError( 
-        //        Reflection.Compute.RecordError(ae.Message);
-        //        if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.ToString());
+        //        //BH.Engine.Base.Compute.RecordError( 
+        //        Base.Compute.RecordError(ae.Message);
+        //        if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.ToString());
         //    }
         //}
 
@@ -142,8 +142,8 @@ namespace BH.Engine.Scheduler.Compute
         //    }
         //    catch (Exception ae)
         //    {
-        //        Reflection.Compute.RecordError(ae.Message);
-        //        if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.ToString());
+        //        Base.Compute.RecordError(ae.Message);
+        //        if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.ToString());
         //    }
         //}
 
@@ -155,8 +155,8 @@ namespace BH.Engine.Scheduler.Compute
         //    }
         //    catch (Exception ae)
         //    {
-        //        Reflection.Compute.RecordError(ae.Message);
-        //        if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.ToString());
+        //        Base.Compute.RecordError(ae.Message);
+        //        if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.ToString());
         //    }
         //}
 
@@ -200,8 +200,8 @@ namespace BH.Engine.Scheduler.Compute
         //    }
         //    catch (Exception ae)
         //    {
-        //        Reflection.Compute.RecordError(ae.Message);
-        //        if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.ToString());
+        //        Base.Compute.RecordError(ae.Message);
+        //        if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.ToString());
         //    }
         //    return l;
         //}
