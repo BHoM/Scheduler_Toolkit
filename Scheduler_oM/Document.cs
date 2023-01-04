@@ -27,7 +27,7 @@ using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using BH.oM.Geometry.SettingOut;
+using BH.oM.Spatial.SettingOut;
 using BH.oM.Schedule;
 
 namespace BH.oM.Scheduler

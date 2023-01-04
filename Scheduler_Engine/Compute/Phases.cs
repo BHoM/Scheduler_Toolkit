@@ -43,8 +43,8 @@ namespace BH.Engine.Scheduler.Compute
             }
             catch (Exception ae)
             {
-                Reflection.Compute.RecordError(ae.Message);
-                if (ae.InnerException != null) Reflection.Compute.RecordError(ae.InnerException.ToString());
+                Base.Compute.RecordError(ae.Message);
+                if (ae.InnerException != null) Base.Compute.RecordError(ae.InnerException.ToString());
             }
             return false;
         }

@@ -17,7 +17,8 @@ namespace BH.Engine.Scheduler.Compute.Levels
             }
             catch (Exception ae)
             {
-                Reflection.Compute.RecordError(ae.StackTrace); Reflection.Compute.RecordError(ae.Message);
+                Base.Compute.RecordError(ae.StackTrace);
+                Base.Compute.RecordError(ae.Message);
             }
         }
     }

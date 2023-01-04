@@ -26,7 +26,7 @@ using BH.oM.Scheduler.Components;
 using BH.oM.Scheduler.Enums;
 using System.Collections.Generic;
 using System.ComponentModel;
-using BH.oM.Geometry.SettingOut;
+using BH.oM.Spatial.SettingOut;
 using BH.oM.Physical.Materials;
 
 namespace BH.oM.Schedule
@@ -44,7 +44,7 @@ namespace BH.oM.Schedule
         public virtual Phase PhaseDemolised { get; set; }
         public virtual PhaseType PhaseType { get; set; }
         public virtual WBSLevel HeadingType { get; set; }
-        public virtual Architecture.Elements.Level Level { get; set; }
+        public virtual Level Level { get; set; }
         public virtual IList<string> Names { get; set; } = new List<string>();
         public virtual string ElementId { get; set; }
         public virtual string TaskId { get; set; }

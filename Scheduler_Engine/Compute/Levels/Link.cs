@@ -1,4 +1,4 @@
-﻿using BH.oM.Geometry.SettingOut;
+﻿using BH.oM.Spatial.SettingOut;
 
 namespace BH.Engine.Scheduler.Compute.Levels
 {
